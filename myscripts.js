@@ -97,10 +97,6 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-<<<<<<< HEAD
-const gameNum = 
-prompt("How many games do you/computer need to win to end the game?")
-=======
 function updatePoint(parent, node, pPoint, cPoint) {
     parent.removeChild(node);
     let displayPoint = document.createElement('p');
@@ -122,81 +118,12 @@ function updateDetail(pSelection, cSelection, res) {
 
 const gameNum = 
 prompt("How many rounds do you/computer need to win?")
->>>>>>> rps-ui
 
 let playerPoint = 0;
 let computerPoint = 0;
 
 let playerSelection = '';
 
-<<<<<<< HEAD
-const paper = document.getElementById('paper');
-const scissor = document.querySelector('#scissor');
-const stone = document.querySelector('#stone');
-
-const urPoint = document.createElement('p')
-// infinite loop when using while loop
-/*while ((playerPoint !== gameNum) || (computerPoint !== gameNum)){
-    if (playerPoint == gameNum) {
-        break;
-    }
-    if (computerPoint == gameNum) {
-        break;
-    }*/
-    
-    paper.addEventListener("click", (e) => {
-        e.preventDefault();
-        const computerSelection = getComputerChoice().toLowerCase();
-        console.log("Computer's choice is " + computerSelection);
-        
-        playerSelection = 'paper';
-        console.log("Your choice is " + playerSelection);
-        playRound(playerSelection, computerSelection);
-        console.log(playerPoint);
-        console.log(computerPoint);
-        if (playerPoint == gameNum) {
-            console.log("You win this game !!");
-        }
-        if (computerPoint == gameNum) {
-            console.log("Computer wins this game !!");
-        }
-    });
-    scissor.addEventListener("click", (e) => {
-        e.preventDefault();
-        const computerSelection = getComputerChoice().toLowerCase();
-        console.log("Computer's choice is " + computerSelection);
-
-        playerSelection = 'scissor';
-        console.log("Your choice is " + playerSelection);
-        playRound(playerSelection, computerSelection);
-        console.log(playerPoint);
-        console.log(computerPoint);
-        if (playerPoint == gameNum) {
-            console.log("You win this game !!");
-        }
-        if (computerPoint == gameNum) {
-            console.log("Computer wins this game !!");
-        }
-    });
-    stone.addEventListener("click", (e) => {
-        e.preventDefault();
-        const computerSelection = getComputerChoice().toLowerCase();
-        console.log("Computer's choice is " + computerSelection);
-
-        playerSelection = 'stone';
-        console.log("Your choice is " + playerSelection);
-        playRound(playerSelection, computerSelection);
-        console.log(playerPoint);
-        console.log(computerPoint);
-        if (playerPoint == gameNum) {
-            console.log("You win this game !!");
-        }
-        if (computerPoint == gameNum) {
-            console.log("Computer wins this game !!");
-        }
-    });
-//}
-=======
 // get button
 let paper = document.getElementById('paper');
 let scissor = document.querySelector('#scissor');
@@ -269,4 +196,3 @@ stone.addEventListener("click", (e) => {
         console.log("Computer wins this game !!");
     }
 });
->>>>>>> rps-ui
